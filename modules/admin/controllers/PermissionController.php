@@ -41,7 +41,7 @@ class PermissionController extends BaseController
         if ($model->load(Yii::$app->request->post())) {
             try {
                 $model->setAttributes([
-                    'type' => $model::CATEGORY_PERMISSION,
+                    'type' => $model::PERMISSION,
                     'created_at' => strtotime(date('Y-m-d H:i:s')),
                     'updated_at' => strtotime(date('Y-m-d H:i:s'))
                 ]);
@@ -81,7 +81,7 @@ class PermissionController extends BaseController
         if ($model->load(Yii::$app->request->post())) {
             try {
                 $model->setAttributes([
-                    'type' => $model::CATEGORY_PERMISSION,
+                    'type' => $model::PERMISSION,
                     'created_at' => strtotime(date('Y-m-d H:i:s')),
                     'updated_at' => strtotime(date('Y-m-d H:i:s'))
                 ]);

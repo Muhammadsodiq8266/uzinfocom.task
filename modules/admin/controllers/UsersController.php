@@ -88,7 +88,6 @@ class UsersController extends BaseController
                 $rules = Yii::$app->request->post('AuthAssignment');
                 $rules = $rules['elements'];
                 if ($model->save()) {
-                    $saved = true;
                     if (!empty($rules)) {
                         foreach ($rules as $rule) {
                             $assign = new AuthAssignment();
@@ -105,6 +104,8 @@ class UsersController extends BaseController
                                 break;
                             }
                         }
+                    } else {
+                        $saved = true;
                     }
                 }
                 if ($saved) {
