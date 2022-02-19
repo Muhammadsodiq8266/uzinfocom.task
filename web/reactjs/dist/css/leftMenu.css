@@ -1,0 +1,9 @@
+.pull-right {
+    float: right!important;
+}
+.pull-left {
+    float: left!important;
+}
+#sidebar-menu ul li ul.sub-menu li a {
+    padding: 0.4rem 1.5rem 0.4rem 2.5rem!important;
+}
